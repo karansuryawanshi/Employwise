@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getUserById, updateUser } from "../services/api";
 import Toast from "./Toast";
-import coverImage from "../assets/cover_Image.jpg";
+import coverImage from "../assets/cover_image.jpg";
 
 const EditUser = () => {
   const { id } = useParams();
@@ -131,14 +131,6 @@ const EditUser = () => {
             />
           </div>
         </div>
-
-        {/* <div className="flex justify-center mb-6">
-          <img
-            src={user.avatar}
-            alt={`${user.first_name} ${user.last_name}`}
-            className="w-32 h-32 rounded-full z-50 object-cover border-4 border-gray-200"
-          />
-        </div> */}
 
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
